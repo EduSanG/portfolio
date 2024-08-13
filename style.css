@@ -12,3 +12,38 @@ section {
     margin: 1rem;
     border-radius: 20px;
 }
+
+nav {
+    ul{
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        li{
+            display: block;
+            border-style: solid;
+            padding: 0.5rem;
+            border-width: 0;
+            border-left-width: 1px;
+            border-color: white;
+            &:last-child {
+                border-right-width: 1px;
+            }
+        }
+    }
+}
+
+h1 {
+    font-size: 10vw;
+    margin: 1.5rem 0 0 2rem;
+    max-width: 0px;
+}
+
+h2 {
+    margin: 0 0 0 0;
+}
+
+h3 {
+    font-size: 3rem;
+    margin: 0 0 0 2rem;
+}
