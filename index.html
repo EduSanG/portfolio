@@ -8,83 +8,95 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
-        <h1>Eduardo Sandoval</h1>
-        <h3>Software Engineer</h3>
+        <div class="shadow-box" onclick="closeNav()"></div>
         <nav>
+            <button class="close-button" onclick="closeNav()"><span class="material-symbols-outlined">arrow_back</span></button>
+            <hr>
             <ul>
                 <li><a class="nav-button" id="profile-button">Profile</a></li>
-                <li><a class="nav-button" id="education-button">Education</a></li>
+                <li><a class="nav-button" id="education-button">Education</a></li>  
                 <li><a class="nav-button" id="experience-button">Profesional Experience</a></li>
                 <li><a class="nav-button" id="socials-button">Socials</a></li>
                 <li><a class="nav-button" id="contact-button">Contact</a></li>
                 <li><a class="nav-button" id="showcase-button">Project Showcase</a></li>
             </ul>
         </nav>
+        <div style="margin-bottom: 1rem;"></div>
+        <h1>Eduardo Sandoval</h1>
+        <h3>Software Engineer</h3>
+        <button class="menu-button" onclick="openNav()"><span class="material-symbols-outlined">menu</span></button>
     </header>
     <main>
         <section id="profile">
             <h2>About me</h2>
             <p>Mechatronics engineer with vast experience in customer service and fast paced, adaptive environments. <br>Developed and deployed custom software applications using Java, JavaScript, HTML, CSS, and SQL</p>
         </section>
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <h4>Bachelor of Engineering in Mechatronics</h4>
-                    <p>Cetys Universidad (2014 - 2018)</p>
-                </li>
-                <li>
-                    <h4>Courses and Certifications</h4>
-                    <ul>
-                        <li>IBM FullStack Developer Profesional Certificate</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+        
         <section id="experience">
             <h2>Profesional Experience</h2>
-            <ul>
-                <li>
-                    <h4>External Digitalization Consultant</h4>
-                    <h5>Grupo CA Resorts</h5>
-                    <ul>
-                        <li>Social Media Management</li>
-                        <li>Data Acquisition and Analysis</li>
-                        <li>Development of custom Dashboards and Reports</li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>External Software Engineer</h4>
-                    <h5>Bosch México, Mexicali, Baja California, Mexico | January 2023 - June 2023</h5>
-                    <ul>
-                        <li>Full Stack development and maintenance of Industry 4.0 platforms</li>
-                        <li>Relevant Skills: Microsoft Server, Microsoft Azure, SQL Server, ReactJS, NodeJS.</li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>Design and Project Engineer</h4>
-                    <h5>SIS Supply, Mexicali, Baja California, Mexico | October 2021 - November 2022</h5>
-                    <ul>
-                        <li>Full ownership of the product pipeline (sales, 3d CAD design, cost management, purchasing, manufacturing, and client delivery) for metal-mechanic industry products.</li>
-                        <li>Relevant Skills: Customer Service, Customer requirements gathering, Customer follow-up, Project management.</li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>Data Aquisition & Data Analyst</h4>
-                    <h5>Superación Juvenil A.B.P | August 2018 - August 2019</h5>
-                    <ul>
-                        <li>Foot racing event Industry - Responsible for web scraping competition public assistance data and running demographic analysis to develop better marketing strategies.</li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="jobs-container">
+                <ul class="joblist">
+                    <li class="job">
+                        <div class="time-container">
+                            <span class="material-symbols-outlined">calendar_month</span>
+                            <time class="timestamp">January 2024 - July 2024</time>
+                        </div>
+                        <h4>External Digitalization Consultant</h4>
+                        <h5>Grupo CA Resorts <span class="location"><i class="material-symbols-outlined">&#xe0c8;</i>Mexicali, Baja California, Mexico</span></h5>
+                        <ul class="job-description">
+                            <li class="description">Social Media Management</li>
+                            <li class="description">Data Acquisition and Analysis</li>
+                            <li class="description">Development of custom Dashboards and Reports</li>
+                        </ul>
+                    </li>
+                    <li class="job">
+                        <div class="time-container">
+                            <span class="material-symbols-outlined">calendar_month</span>
+                            <time class="timestamp">January 2023 - June 2023</time>
+                        </div>
+                        <h4>External Software Engineer</h4>
+                        <h5>Bosch México <span class="location"><i class="material-symbols-outlined">&#xe0c8;</i>Mexicali, Baja California, Mexico</span></h5>
+                        <ul class="job-description">
+                            <li class="description">Full Stack development and maintenance of Industry 4.0 platforms</li>
+                            <li class="description">Relevant Skills: Microsoft Server, Microsoft Azure, SQL Server, ReactJS, NodeJS.</li>
+                        </ul>
+                    </li>
+                    <li class="job">
+                        <div class="time-container">
+                            <span class="material-symbols-outlined">calendar_month</span>
+                            <time class="timestamp">October 2021 - November 2022</time>
+                        </div>
+                        <h4>Design and Project Engineer</h4>
+                        <h5>SIS Supply <span class="location"><i class="material-symbols-outlined">&#xe0c8;</i>Mexicali, Baja California, Mexico</span></h5>
+                        <ul class="job-description">
+                            <li class="description">Full ownership of the product pipeline (sales, 3d CAD design, cost management, purchasing, manufacturing, and client delivery) for metal-mechanic industry products.</li>
+                            <li class="description">Relevant Skills: Customer Service, Customer requirements gathering, Customer follow-up, Project management.</li>
+                        </ul>
+                    </li>
+                    <li class="job">
+                        <div class="time-container">
+                            <span class="material-symbols-outlined">calendar_month</span>
+                            <time class="timestamp">August 2018 - August 2019</time>
+                        </div>
+                        <h4>Data Aquisition & Data Analyst</h4>
+                        <h5>Superación Juvenil A.B.P <span><i class="material-symbols-outlined">&#xe0c8;</i>Monterrey, Nuevo Leon</span></h5>
+                        <ul class="job-description">
+                            <li class="description">Foot racing event Industry - Responsible for web scraping competition public assistance data and running demographic analysis to develop better marketing strategies.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section id="skills">
             <h2>Skills</h2>
             <h4>Hard Skills</h4>
-            <ul>
+            <ul class="hardskills">
                 <li>
                     <h5>Programming Languages</h5>
                     <ul>
@@ -121,7 +133,7 @@
                 </li>
             </ul>
             <h4>Soft Skills</h4>
-            <ul>
+            <ul class="softskills">
                 <li>Value Oriented</li>
                 <li>Teamworker</li>
                 <li>Problem Solver</li>
@@ -133,7 +145,9 @@
         <section id="showcase">
             <h2>Project Showcase</h2>
         </section>
-        <section id="contact">Contact information</section>
+        <section id="contact">
+            <h2>Contact information</h2>
+        </section>
         <footer>
 
         </footer>
