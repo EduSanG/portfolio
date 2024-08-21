@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Eduardo Sandoval</title>
+    <meta name="description" content="Software Engineer">
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -26,12 +27,11 @@
             <button class="close-button" onclick="closeNav()"><span class="material-symbols-outlined">arrow_back</span></button>
             <hr>
             <ul>
-                <li><a class="nav-button" id="profile-button">Profile</a></li>
-                <li><a class="nav-button" id="education-button">Education</a></li>  
-                <li><a class="nav-button" id="experience-button">Profesional Experience</a></li>
-                <li><a class="nav-button" id="socials-button">Socials</a></li>
-                <li><a class="nav-button" id="contact-button">Contact</a></li>
-                <li><a class="nav-button" id="showcase-button">Project Showcase</a></li>
+                <li><a class="nav-button" href="#profile" id="profile-button">Profile</a></li>
+                <li><a class="nav-button" href="#showcase" id="showcase-button">Project Showcase</a></li>
+                <li><a class="nav-button" href="#experience" id="experience-button">Profesional Experience</a></li>
+                <li><a class="nav-button" href="#skills" id="socials-button">Skills</a></li>
+                <li><a class="nav-button" href="#contact" id="contact-button">Contact</a></li>
             </ul>
         </nav>
         <div class="title-container">
@@ -48,11 +48,31 @@
     <main>
         <section id="profile">
             <h2><span class="material-symbols-outlined">person</span>About me</h2>
-            <p>Mechatronics engineer with vast experience in customer service and fast paced, adaptive environments. <br>Developed and deployed custom software applications using Java, JavaScript, HTML, CSS, and SQL.</p>
+            <div class="p-content">
+                <div class="p-text">
+                    <p>Mechatronics engineer with vast experience in customer service and fast paced, adaptive environments. <br>Developed and deployed custom software applications using Java, JavaScript, HTML, CSS, and SQL.</p>
+                    <p class="location"><span class="material-symbols-outlined">language</span> Location: Mexicali Baja California, Mexico</p>
+                </div>
+                <div class="p-list">
+                    <p>Some of my profiles:</p>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1FHlLqJSOxIGmWMunJjVi02pEzJSaBiBU/view?usp=sharing">Resume</a></li>
+                        <li><a href="https://github.com/EduSanG">Github</a></li>
+                        <li><a href="https://www.coursera.org/user/634c4ca40ebab502acfd510f4ca5c839">Coursera</a></li>
+                        <li><a href="https://www.linkedin.com/in/eduardo-sandoval-g">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
         
         <section id="showcase">
             <h2><span class="material-symbols-outlined">view_carousel</span>Project Showcase</h2>
+            <!-- <ul>
+                <li>
+                    <p>title</p>
+
+                </li>
+            </ul> -->
         </section>
 
         <section id="experience">
@@ -116,41 +136,43 @@
                 <li class="skill">
                     <h5>Programming Languages</h5>
                     <ul>
-                        <li>JavaScript</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>C</li>
+                        <li><img height="36px" src="public/js.png" />JavaScript</li>
+                        <li><img height="36px" src="public/java.png" />Java</li>
+                        <li><img height="36px" src="public/python.png" />Python</li>
+                        <li><img height="36px" src="public/c.png" />C</li>
                     </ul>
                 </li>
                 <li class="skill">
                     <h5>Libraries / Frameworks</h5>
                     <ul>
-                        <li>React (Vite / NextJs)</li>
-                        <li>NodeJS</li>
-                        <li>MongoDB</li>
-                        <li>SQL Server</li>
-                        <li>ExpressJS</li>
+                        <li><img height="36px" src="public/react.png" />React (Vite / NextJs)</li>
+                        <li><img height="36px" src="public/node.png" />NodeJS</li>
+                        <li><img height="36px" src="public/mongodb.png" />MongoDB</li>
+                        <li><img height="36px" src="public/sql.png" />SQL Server</li>
+                        <li><img height="36px" src="public/express.png" />ExpressJS</li>
                     </ul>
                 </li>
                 <li class="skill">
                     <h5>Cloud Technologies</h5>
                     <ul>
-                        <li>Amazon AWS</li>
-                        <li>Microsoft Azure</li>
+                        <li><img height="36px" src="public/aws.png" /> AWS</li>
+                        <li><img height="36px" src="public/azure.png" />Microsoft Azure</li>
                     </ul>
                 </li>
                 <li class="skill">
                     <h5>Project Management</h5>
                     <ul>
-                        <li>Scrum / Kanban</li>
-                        <li>Git / Bitbucket</li>
-                        <li>Jira</li>
+                        <li><img height="36px" src="public/scrum.png" />Scrum / Kanban</li>
+                        <li><img height="36px" src="public/git.png" />Git / Bitbucket</li>
+                        <li><img height="36px" src="public/jira.png" />Jira</li>
                     </ul>
                 </li>
             </ul>
         </section>
         <section id="contact">
             <h2><span class="material-symbols-outlined">send</span>Contact information</h2>
+            <!-- <button>mail</button>
+            <button>linkedin</button> -->
         </section>
         <footer>
 
