@@ -13,7 +13,7 @@ html {
 body {
     font-family: "Roboto", sans-serif;
     background-image: linear-gradient(to right top, #193a6f, #173463, #152e57, #13284b, #112240);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     color: white;
     margin: 0;
     display: flex;
@@ -30,8 +30,7 @@ ul {
 }
 
 section {
-    margin-left: 1rem;
-    margin-right: 1rem;
+
 
     display: flex;
     flex-direction: column;
